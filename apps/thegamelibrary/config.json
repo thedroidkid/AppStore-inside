@@ -1,0 +1,32 @@
+{
+  "id": "thegamelibrary",
+  "name": "The Game Library",
+  "urn": "thegamelibrary:_user",
+  "available": true,
+  "port": 80,
+  "categories": [
+    "utilities"
+  ],
+  "description": "A self-hosted web app for tracking a personal game collection. Add and edit games, sort by title or platform, search TheGamesDB when you provide an API key, or enter game details and upload cover art manually.",
+  "short_desc": "A self-hosted web app for tracking a personal game collection.",
+  "author": "DroidKid",
+  "source": "",
+  "website": "https://github.com/thedroidkid/TheGameLibrary",
+  "exposable": true,
+  "no_gui": false,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "tipi_version": 1,
+  "version": "1.0",
+  "dynamic_config": true,
+  "deprecated": false,
+  "force_expose": false,
+  "generate_vapid_keys": false,
+  "form_fields": [],
+  "https": false,
+  "created_at": 1792109059512,
+  "updated_at": 1792109059512,
+  "force_pull": false
+}
