@@ -5,6 +5,7 @@ AppStore-inside is a custom app store for [Runtipi](https://runtipi.io), maintai
 | App | Description |
 | --- | --- |
 | [The Game Library](apps/thegamelibrary) | A self-hosted web app for tracking a personal game collection. |
+| [Surveillance](apps/surveillance) | A web interface for managing and viewing RTSP video streams. |
 | [Whoami](apps/whoami) | A small web server that displays information about the host and incoming HTTP requests. |
 
 ## Using the app store

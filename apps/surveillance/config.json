@@ -1,0 +1,32 @@
+{
+  "id": "surveillance",
+  "name": "Surveillance",
+  "urn": "surveillance:_user",
+  "available": true,
+  "port": 8083,
+  "categories": [
+    "utilities"
+  ],
+  "description": "A self-hosted web interface for managing and viewing RTSP video streams, powered by rtsp-to-web.",
+  "short_desc": "Manage and view RTSP video streams in a web interface.",
+  "author": "deepch",
+  "source": "https://github.com/deepch/RTSPtoWeb",
+  "website": "https://github.com/deepch/RTSPtoWeb",
+  "exposable": true,
+  "no_gui": false,
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "tipi_version": 1,
+  "version": "1.0.0",
+  "dynamic_config": true,
+  "deprecated": false,
+  "force_expose": false,
+  "generate_vapid_keys": false,
+  "form_fields": [],
+  "https": false,
+  "created_at": 1792167813803,
+  "updated_at": 1792167813803,
+  "force_pull": false
+}

@@ -1,0 +1,14 @@
+x-runtipi:
+  schema_version: 2
+services:
+  rtsp-to-web:
+    image: cmer/rtsp-to-web:latest
+    restart: unless-stopped
+    ports:
+      - 8083:8083/tcp
+      - 8083:8083/udp
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+    x-runtipi:
+      internal_port: 8083
+      is_main: true
