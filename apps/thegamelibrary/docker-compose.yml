@@ -1,0 +1,16 @@
+x-runtipi:
+  schema_version: 2
+services:
+  game-library:
+    image: droidkid/thegamelibrary:latest
+    restart: unless-stopped
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    environment:
+      - GAME_LIBRARY_DATA_DIR=/data
+      - THEGAMESDB_KEY_FILE=/data/thegamesdb-key
+    security_opt:
+      - no-new-privileges:true
+    x-runtipi:
+      internal_port: 80
+      is_main: true
