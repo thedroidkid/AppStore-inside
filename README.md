@@ -1,31 +1,42 @@
-# Example App Store Template
+# AppStore-inside
 
-This repository serves as a template for creating your own custom app store for the Runtipi platform. Use this as a starting point to create and share your own collection of applications.
+AppStore-inside is a custom app store for [Runtipi](https://runtipi.io), maintained by DroidKid. It contains the following apps:
 
-## Repository Structure
+| App | Description |
+| --- | --- |
+| [The Game Library](apps/thegamelibrary) | A self-hosted web app for tracking a personal game collection. |
+| [Whoami](apps/whoami) | A small web server that displays information about the host and incoming HTTP requests. |
 
-- **apps/**: Contains individual app directories
+## Using the app store
 
-  - Each app has its own folder (e.g., `whoami/`) with the following structure:
-    - `config.json`: App configuration file
-    - `docker-compose.json`: Docker setup for the app
-    - `metadata/`: Contains app visuals and descriptions
-      - `description.md`: Markdown description of the app
-      - `logo.jpg`: App logo image
+Add this repository as a custom app store in your Runtipi instance. See the [Runtipi guide to creating and using custom app stores](https://runtipi.io/docs/guides/create-your-own-app-store) for the current setup instructions.
 
-- **tests/**: Contains test files for the app store
+After adding the store, install and manage its apps from the Runtipi interface. Check each app's description and configuration for its requirements and available options.
 
-  - `apps.test.ts`: Test suite for validating apps
+## Repository structure
 
-## Getting Started
+Each directory in `apps/` contains one app:
 
-This repository is intended to serve as a template for creating your own app store. Follow these steps to get started:
+```text
+apps/<app-id>/
+├── config.json
+├── docker-compose.yml
+└── metadata/
+    ├── description.md
+    └── logo.jpg
+```
 
-1. Click the "Use this template" button to create a new repository based on this template
-2. Customize the apps or add your own app folders in the `apps/` directory
-3. Test your app store by using it with Runtipi
+- `config.json` defines the app's Runtipi metadata and settings.
+- `docker-compose.yml` defines its container service.
+- `metadata/` contains the app description and logo shown in the store.
 
-## Documentation
+## Development
 
-For detailed instructions on creating your own app store, please refer to the official guide:
-[Create Your Own App Store Guide](https://runtipi.io/docs/guides/create-your-own-app-store)
+Install the dependencies and run the app-store tests with [Bun](https://bun.sh/):
+
+```sh
+bun install
+bun test
+```
+
+To add an app, create a directory under `apps/` with its configuration, Docker Compose file, and metadata. Run the tests before submitting changes.
