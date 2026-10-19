@@ -18,7 +18,7 @@
     "amd64",
     "arm64"
   ],
-  "tipi_version": 2,
+  "tipi_version": 3,
   "version": "1.4",
   "dynamic_config": true,
   "deprecated": false,
