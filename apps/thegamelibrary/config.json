@@ -7,7 +7,7 @@
   "categories": [
     "utilities"
   ],
-  "description": "A self-hosted web app for tracking a personal game collection. Add and edit games, sort by title or platform, search TheGamesDB when you provide an API key, or enter game details and upload cover art manually.",
+  "description": "A self-hosted web app for tracking a personal game collection, importing game titles from text files, and exporting to CSV. Optionally search TheGamesDB with an API key or add games manually.",
   "short_desc": "A self-hosted web app for tracking a personal game collection.",
   "author": "DroidKid",
   "source": "",
@@ -18,8 +18,8 @@
     "amd64",
     "arm64"
   ],
-  "tipi_version": 3,
-  "version": "1.4",
+  "tipi_version": 4,
+  "version": "1.5",
   "dynamic_config": true,
   "deprecated": false,
   "force_expose": false,
@@ -27,6 +27,6 @@
   "form_fields": [],
   "https": false,
   "created_at": 1792109059512,
-  "updated_at": 1792183314037,
+  "updated_at": 1792535619535,
   "force_pull": false
 }

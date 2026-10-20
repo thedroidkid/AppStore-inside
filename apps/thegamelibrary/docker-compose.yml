@@ -2,7 +2,7 @@ x-runtipi:
   schema_version: 2
 services:
   game-library:
-    image: droidkid/thegamelibrary:v1.4
+    image: droidkid/thegamelibrary:v1.5
     restart: unless-stopped
     volumes:
       - ${APP_DATA_DIR}/data:/data
