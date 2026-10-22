@@ -18,8 +18,8 @@
     "amd64",
     "arm64"
   ],
-  "tipi_version": 4,
-  "version": "1.5",
+  "tipi_version": 5,
+  "version": "1.6",
   "dynamic_config": true,
   "deprecated": false,
   "force_expose": false,
@@ -27,6 +27,6 @@
   "form_fields": [],
   "https": false,
   "created_at": 1792109059512,
-  "updated_at": 1792535619535,
+  "updated_at": 1792705765287,
   "force_pull": false
 }
